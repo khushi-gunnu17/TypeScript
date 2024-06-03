@@ -14,7 +14,7 @@ var userId = 2345.67; // type inference
 console.log(userId.toPrecision(4));
 // boolean 
 var isLoggedIn = false;
-isLoggedIn.valueOf;
+console.log(isLoggedIn.valueOf());
 // any
 // let hero;
 var hero;
@@ -22,3 +22,4 @@ function getHero() {
     return "Thor";
 }
 hero = getHero();
+console.log(hero);

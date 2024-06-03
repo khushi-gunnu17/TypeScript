@@ -79,8 +79,20 @@ let myUser : NewUser = {
 }
 
 
+let oneUser : NewUser = {
+    _id : "123",
+    name : "Gunnu",
+    email : "khushi@google.com",
+    isActive : false
+}
+
+
 myUser.email = "khushi@gmail.com"
 // myUser._id = "92dhv"        // cannot access it as it is readonly
+console.log(myUser.email);
+console.log(oneUser.email);
+
+
 
 
 

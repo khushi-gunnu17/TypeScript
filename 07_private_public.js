@@ -13,6 +13,7 @@ var khushi = new User("khushi@gmail.com", "khushi");
 // khushi.city         // private
 // khushi.name         // private
 // #private in javascript and no private keyword there
+// alternative syntax for classes in TS
 var NewUser = /** @class */ (function () {
     function NewUser(email, name, userId) {
         this.email = email;

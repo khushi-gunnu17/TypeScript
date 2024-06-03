@@ -62,10 +62,9 @@ const getHello = (s: string): string => {
 const heroes = ['Thor', 'spiderman', 'ironman']
 // const heroes = [1, 2, 3]
 
-heroes.map((hero) : string => {
+console.log(heroes.map((hero) : string => {
     return `hero is ${hero}.`
-})
-
+}))
 
 
 
@@ -78,8 +77,15 @@ function consoleError(errormsg : string): void {
 
 // never is specifically made so that you can handle the error 
 function handleError(errormsg : string): never {
+    // Throwing the error means this function will never reach the end and return.
     throw new Error(errormsg)
 }
+
+// try {
+//     handleError("Name Error")
+// } catch (error) {
+//     console.log(error)
+// }
 
 
 

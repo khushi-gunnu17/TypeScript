@@ -28,7 +28,7 @@ console.log(userId.toPrecision(4));
 // boolean 
 
 let isLoggedIn : boolean = false
-isLoggedIn.valueOf
+console.log(isLoggedIn.valueOf())
 
 
 
@@ -43,6 +43,9 @@ function getHero() {
 }
 
 hero = getHero()
+
+console.log(hero);
+
 
 
 

@@ -31,13 +31,14 @@ var getHello = function (s) {
 };
 var heroes = ['Thor', 'spiderman', 'ironman'];
 // const heroes = [1, 2, 3]
-heroes.map(function (hero) {
+console.log(heroes.map(function (hero) {
     return "hero is ".concat(hero, ".");
-});
+}));
 function consoleError(errormsg) {
     console.log(errormsg);
 }
 // never is specifically made so that you can handle the error 
 function handleError(errormsg) {
+    // Throwing the error means this function will never reach the end and return.
     throw new Error(errormsg);
 }

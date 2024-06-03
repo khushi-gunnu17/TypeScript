@@ -16,10 +16,15 @@ type Admin = {
 
 let khushi: User | Admin = {name : "Khushi", id : 100}
 
-khushi = {
+console.log(khushi);
+
+
+khushi = {                              // changing the value here to Admin type
     username : "Khushi-gunnu",
     id : 100
 }
+
+console.log(khushi);
 
 
 
@@ -37,12 +42,11 @@ getDBId("234")
 
 function getNewDBId(id : number | string) {
     if (typeof id === "string") {
-        id.toLowerCase()
-
+        console.log(id.toLowerCase());
     }
 }
 
-
+getNewDBId("GUNNU")
 
 
 

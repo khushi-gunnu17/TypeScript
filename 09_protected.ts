@@ -32,11 +32,18 @@ class SubUser extends User {
         this._courseCount + 1
     }
 
+    get courseCount(): number {
+        return this._courseCount
+    }
+
 }
 
 
-const Gunnu = new User("k@k.com", "Gunnu", "123abc")
+const Gunnu = new SubUser("k@k.com", "Gunnu", "123abc")
 
+Gunnu.changeCourseCount()
+
+console.log(Gunnu.courseCount);
 
 
 export {}

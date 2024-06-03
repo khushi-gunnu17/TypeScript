@@ -38,4 +38,29 @@ var User = /** @class */ (function () {
     });
     return User;
 }());
+var readline = require("readline");
+var read = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
 var Gunnu = new User("k@k.com", "Gunnu", "123abc");
+console.log(Gunnu.city);
+console.log(Gunnu.email);
+console.log(Gunnu.courseCount);
+console.log(Gunnu.getAppleEmail);
+read.question("Please enter the course count : ", function (input) {
+    var courseCount = Number(input);
+    if (!isNaN(courseCount)) {
+        try {
+            Gunnu.courseCount = courseCount;
+            console.log("Updated course count: ".concat(Gunnu.courseCount));
+        }
+        catch (error) {
+            console.log(error.message);
+        }
+    }
+    else {
+        console.log("Invalid Input");
+    }
+    read.close();
+});

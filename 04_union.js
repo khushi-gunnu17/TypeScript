@@ -3,10 +3,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var score = 33;
 score = "khushi123";
 var khushi = { name: "Khushi", id: 100 };
+console.log(khushi);
 khushi = {
     username: "Khushi-gunnu",
     id: 100
 };
+console.log(khushi);
 function getDBId(id) {
     // making some api calls above this code down below
     console.log("DB id is : ".concat(id));
@@ -15,9 +17,10 @@ getDBId(2);
 getDBId("234");
 function getNewDBId(id) {
     if (typeof id === "string") {
-        id.toLowerCase();
+        console.log(id.toLowerCase());
     }
 }
+getNewDBId("GUNNU");
 // array
 var data = [1, 2, 3, 4];
 var data2 = ["1", "2"];

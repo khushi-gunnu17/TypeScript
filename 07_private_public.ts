@@ -21,7 +21,7 @@ const khushi = new User("khushi@gmail.com", "khushi")
 
 
 
-
+// alternative syntax for classes in TS
 class NewUser {
 
     readonly city : string = 'Jaipur'

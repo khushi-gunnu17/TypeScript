@@ -49,6 +49,15 @@ var SubUser = /** @class */ (function (_super) {
     SubUser.prototype.changeCourseCount = function () {
         this._courseCount + 1;
     };
+    Object.defineProperty(SubUser.prototype, "courseCount", {
+        get: function () {
+            return this._courseCount;
+        },
+        enumerable: false,
+        configurable: true
+    });
     return SubUser;
 }(User));
-var Gunnu = new User("k@k.com", "Gunnu", "123abc");
+var Gunnu = new SubUser("k@k.com", "Gunnu", "123abc");
+Gunnu.changeCourseCount();
+console.log(Gunnu.courseCount);
