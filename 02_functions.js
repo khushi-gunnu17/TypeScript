@@ -42,3 +42,19 @@ function handleError(errormsg) {
     // Throwing the error means this function will never reach the end and return.
     throw new Error(errormsg);
 }
+// try {
+//     handleError("Name Error")
+// } catch (error) {
+//     console.log(error)
+// }
+// rest parameters
+function add(a, b) {
+    var rest = [];
+    for (var _i = 2; _i < arguments.length; _i++) {
+        rest[_i - 2] = arguments[_i];
+    }
+    return a + b + rest.reduce(function (p, c) { return p + c; }, 0);
+}
+// in this function, the parameter `value` automatically gets assigned the type `number` from the type `Negate`
+var negateFunction = function (value) { return value * -1; };
+console.log(negateFunction(10));

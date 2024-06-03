@@ -89,4 +89,30 @@ function handleError(errormsg : string): never {
 
 
 
+
+
+
+
+
+
+// rest parameters
+function add(a : number, b: number, ...rest : number[]) {
+    return a + b + rest.reduce((p, c) => p + c, 0)
+}
+
+
+
+
+
+// type aliases
+type negate = (value : number) => number
+
+// in this function, the parameter `value` automatically gets assigned the type `number` from the type `Negate`
+const negateFunction : negate = (value) => value * -1
+
+console.log(negateFunction(10));
+
+
+
+
 export {}
