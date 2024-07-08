@@ -37,6 +37,6 @@ var oneUser = {
     isActive: false
 };
 myUser.email = "khushi@gmail.com";
-// myUser._id = "92dhv"        // cannot access it as it is readonly
+// myUser._id = "92dhv"        // cannot change it as it is readonly
 console.log(myUser.email);
 console.log(oneUser.email);

@@ -6,7 +6,7 @@
 - Typescript is always being transpiled into the Javascript.
 - It is a development tool.
 - Typescript is a superset of Javascript.
-- Chances of producing errors are descreased.
+- Chances of producing errors are decreased.
 - It is not a standalone language, but a wrapper on Javascript.
 - TypeScript is JavaScript with added syntax for types.
 
